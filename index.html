@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudatos szülők</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <div class="logo">Tudatos szülők</div>
+            <ul class="menu">
+                <li><a href="#bemutatkozas">Bemutatkozás</a></li>
+                <li><a href="#menet">Az alkalom menete</a></li>
+                <li><a href="#videok">Videók &amp; Kísérletek</a></li>
+                <li><a href="#letoltheto">Letölthető anyagok</a></li>
+                <li><a href="#kapcsolat">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Üdvözöl a Tudatos szülők oldal!</h1>
+            <p>Pszichoedukáció, hogy magabiztosabb szülő lehess.</p>
+        </section>
+
+        <section id="bemutatkozas">
+            <h2>Bemutatkozás</h2>
+            <p>Röviden bemutatkozunk, és elmondjuk, miért fontos a tudatosság a szülői szerepben.</p>
+            <img src="images/family.svg" alt="Család" class="icon">
+        </section>
+
+        <section id="menet">
+            <h2>Az alkalom menete</h2>
+            <ol>
+                <li>Fejlődéslélektani alapok</li>
+                <li>Tévhitek vs. tények</li>
+                <li>Gyakorlati tanácsok</li>
+            </ol>
+        </section>
+
+        <section id="videok">
+            <h2>Videók &amp; Kísérletek</h2>
+            <p>Tekintsd meg rövid videóinkat, amelyek bemutatják a pszichológiai kísérleteket.</p>
+            <video controls width="320" aria-label="Kísérleti videó">
+                <source src="videos/sample.mp4" type="video/mp4">
+                A böngésződ nem támogatja a videó lejátszását.
+            </video>
+        </section>
+
+        <section id="kviz" class="quiz">
+            <h2>Mit gondolsz, tény vagy tévhit?</h2>
+            <p>A rendszeres közös játék segíti a gyermek érzelmi fejlődését.</p>
+            <button onclick="answer(true)">Tény</button>
+            <button onclick="answer(false)">Tévhit</button>
+            <p id="quiz-result" aria-live="polite"></p>
+        </section>
+
+        <section id="letoltheto">
+            <h2>Letölthető anyagok</h2>
+            <p>Töltsd le segédanyagainkat PDF formátumban.</p>
+            <ul>
+                <li><a href="downloads/tippek.pdf" download>Szülői tippek</a></li>
+            </ul>
+        </section>
+
+        <section id="kapcsolat">
+            <h2>Kapcsolat</h2>
+            <form>
+                <label>Név: <input type="text" name="name"></label>
+                <label>Email: <input type="email" name="email"></label>
+                <label>Kérdésed: <textarea name="message"></textarea></label>
+                <button type="submit">Küldés</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tudatos szülők</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
